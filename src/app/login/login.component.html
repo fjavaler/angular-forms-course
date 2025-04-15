@@ -8,7 +8,7 @@
 
       <mat-form-field>
 
-        <input matInput type="email" name="email" placeholder="Email" ngModel [ngModelOptions]="{updateOn: 'blur'}"
+        <input matInput type="email" name="email" placeholder="Email" ngModel [ngModelOptions]="{standalone: false}"
           #email="ngModel" required minlength="3" maxlength="20" email (ngModelChange)="onEmailChange($event)">
         @if (email.hasError('required')) {
         <mat-error>Email is required.</mat-error>

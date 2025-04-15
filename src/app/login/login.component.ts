@@ -16,8 +16,7 @@ export class LoginComponent implements OnInit {
     console.log(loginForm.value, loginForm.valid, submit);
   }
 
-  onEmailChange(event: Event) {
-    const input = event.target as HTMLInputElement;
-    console.log(input.value);
+  onEmailChange(newEmailValue: string) {
+    console.log(`Current email value is: ${newEmailValue}`);
   }
 }
