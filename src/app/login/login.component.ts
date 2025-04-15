@@ -15,4 +15,9 @@ export class LoginComponent implements OnInit {
   login(loginForm: NgForm, submit: SubmitEvent) {
     console.log(loginForm.value, loginForm.valid, submit);
   }
+
+  onEmailChange(event: Event) {
+    const input = event.target as HTMLInputElement;
+    console.log(input.value);
+  }
 }
